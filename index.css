@@ -1,0 +1,210 @@
+:root {
+    font-family: "Josefin Sans", sans-serif;
+    color: white;
+    box-sizing:border-box;
+    background-color: hsl(201, 30%, 74%);
+    display: flex;
+    justify-content: center; 
+    min-height: 100%;
+    user-select: none;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    background-color: #0C4A6E;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    width: 377px;
+    padding: 0 0 20px 0;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    margin: 0px 0 0 0;
+}
+
+h1 {
+    margin:0;
+    font-weight: 800px;
+    font-size: 26.5px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 20px 0 0 0;
+}
+
+#entry {
+    width: 317px;
+    height: 118px;
+    background-color: hsl(218, 28%, 20%);
+    margin: 10px 0 0 0;
+    border: none;
+    border-radius: 8px;
+    color: #8F8F8F;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 8px;
+    resize: none;
+    box-sizing: border-box;  
+
+}
+
+.btn-container {
+    display: flex;
+    width: 317px;
+    justify-content: space-between;
+}
+
+#from, #to {
+    width: 142.85px;
+    height: 30px;
+    background-color: hsl(218, 28%, 20%);
+    margin: 10px 0 0 0;
+    border: none;
+    border-radius: 8px;
+    color: #8F8F8F;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 5px;
+    text-align: center;
+}
+
+textarea::-webkit-scrollbar, #postings::-webkit-scrollbar {
+    width: 0.5em;
+}
+  
+textarea::-webkit-scrollbar-track, #postings::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+  
+textarea::-webkit-scrollbar-thumb, #postings::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+    border-radius: 5px;
+}
+
+#publish {
+    margin: 15px 0 0 0;
+    width: 317px;
+    height: 45px;
+    color: #04131C;
+    font-weight: 800;
+    font-size: 22px;
+    background-color: #FBBF24;
+    border: none;
+    border-radius: 8px;
+}
+
+#postings {
+    overflow-y: auto;
+    width: 317px;    
+}
+
+#postings > div {
+    background-color: white;
+    margin-top: 15px;
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #1B1924;
+    padding: 12px;
+}
+
+.to-from {
+    font-weight: 800;
+    margin: 0;
+}
+
+.to-from > span {
+    color: #b48204;
+}
+
+.entry-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.likes {
+    margin: 0;
+    display: flex;
+    font-weight: 800;
+    align-items: center;
+}
+
+.likes > p {
+    margin: 0 0 0 3px;
+}
+
+.heart-full {
+    color:rgb(175, 9, 42);
+}
+
+.likes > p.zero-likes {
+    margin-right: 8px;
+}
+
+/* Computer screens */
+@media screen and (min-width: 980px) and (orientation: landscape) {
+    /* Styles for screens larger than 980px and in landscape mode go here */
+    main {
+        width: 800px;
+    }
+    h1 {
+        font-size: 63px;
+    }
+    #entry {
+        width: 750px;
+        font-size: 20px;
+    }
+    #from, #to {
+        width: 360px;
+        font-size: 20px;
+        height: 35px;
+    }
+    .btn-container {
+        width: 750px;
+        margin-top: 7px;
+    }
+    #publish {
+        margin: 20px 0 0 0;
+        width: 750px;
+        height: 55px;
+        font-weight: 800;
+        font-size: 25px;
+    }
+
+    h2 {
+        margin-top: 40px;
+        font-size: 40px;
+    }
+
+    #postings {
+        width: 750px;    
+    }
+    
+    #postings > div {
+        margin-top: 25px;
+        font-size: 14px;
+        padding: 14px;
+    }
+   
+    .likes > p {
+        margin: 0 0 0 5px;
+    }
+    
+    .likes > p.zero-likes {
+        margin-right: 10px;
+    }
+}

@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <title>Gratitude Sharing Board</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <main>
+            <img src="./assets/logo.png" alt="bulletin board logo">
+            <h1>Gratitude Sharing Board</h1>
+            <textarea id="entry" placeholder="Share your gratitude!"></textarea>
+            <div class="btn-container">
+                <input type="text" id="from" placeholder="From"><input type="text" id="to" placeholder="To">
+            </div>
+            <button id="publish">share</button>
+            <h2>- Why we're grateful -</h2>
+            <div id="postings">
+            </div>
+        </main>
+        <script src="index.js" type="module"></script>
+    </body>
+</html>
